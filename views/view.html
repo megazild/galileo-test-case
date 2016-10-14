@@ -15,7 +15,7 @@
         socket = io();
         socket.on("button state", function(msg){
             if(msg == 1){
-                $('#state').html('Pressed');
+                $('#state').html('Pressed');led.write(1);
             }else{
                 $('#state').html('');
             }
